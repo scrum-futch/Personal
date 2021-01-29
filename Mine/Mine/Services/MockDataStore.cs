@@ -19,7 +19,6 @@ namespace Mine.Services
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Triple Red Shell", Description="3 Red Shells.", Value=3 },
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Green Shell", Description="Shoots forward Unguided. ", Value =6 },
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Lightning Bolt", Description="Shoots forward Unguided.", Value = 9 },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
             };
         }
 
