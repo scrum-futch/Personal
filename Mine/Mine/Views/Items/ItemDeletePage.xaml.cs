@@ -35,5 +35,15 @@ namespace Mine.Views
             viewModel = new ItemReadViewModel(item);
             BindingContext = viewModel;
         }
+        public async void CancelItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
+        public async void DeleteItem_Clicked(object sender, EventArgs e)
+        {
+            MessagingCenter.Send(this, "DeleteItem", viewModel.Item);
+
+            await Navigation.PopToRootAsync();
+        }
     }
 }
