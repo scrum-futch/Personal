@@ -65,10 +65,20 @@ namespace Mine.Services
         {
             throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Brings items to the readpage from the database
+        /// </summary>
+        /// <param name="id"> id </param>
+        /// <returns>results</returns>
         public Task<ItemModel> ReadAsync(string id)
         {
-            throw new NotImplementedException();
+            if( id== null)
+            {
+                return null;
+            }
+
+            var result = Database.Table<ItemModel>().FirstOrDefaultAsync(m => m.Id.Equals(id));
+            return result;
         }
         /// <summary>
         ///  Calls Items to the page
