@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Game
+namespace Mine
 {
     public static class TaskExtensions
     {
