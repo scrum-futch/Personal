@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
+using Mine.Models;
 namespace UnitTests.Models
 {
     [TestFixture]
@@ -10,7 +11,9 @@ namespace UnitTests.Models
         [Test]
         public void ItemModel_Constructor_Valid_()
         {
-            Assert.Pass();
+            var result = new ItemModel();
+
+            Assert.IsNotNull(result);
         }
     }
 }
