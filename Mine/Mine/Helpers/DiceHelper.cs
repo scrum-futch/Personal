@@ -12,7 +12,7 @@ namespace Mine.Helpers
         { 
             if (ForceRollsToNotRandom) 
             {
-                return rolls * ForcedRandomValue; 
+                return ForcedRandomValue; 
             }
             if (rolls < 1) {
                 return 0; 
