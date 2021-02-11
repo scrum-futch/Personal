@@ -23,7 +23,7 @@ namespace UnitTests.Helpers {
             // Reset
             // Assert             
             Assert.AreEqual(true, result >= 1);
-            Assert.AreEqual(true, result >= 6);
+            Assert.AreEqual(true, result <= 6);
         }
         [Test]
         public void RollDice_Invalid_Roll_Forced_1_Should_Return_1()
@@ -47,7 +47,7 @@ namespace UnitTests.Helpers {
             // Reset
             // Assert             
             Assert.AreEqual(true, result >= 2);
-            Assert.AreEqual(true, result >= 12);
+            Assert.AreEqual(true, result <= 12);
         }
         [Test]
         public void RollDice_Invalid_Roll_0_Dice_10_Should_Return_Zero()
