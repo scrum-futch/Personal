@@ -76,6 +76,18 @@ namespace UnitTests.Helpers {
             // Assert             
             Assert.AreEqual(5, result);
         }
+        public void RollDice_Valid_Roll_3_Dice_10_Fixed_15_Should_Return_15()
+        {
+            // Arrange
+            DiceHelper.ForceRollsToNotRandom = true;
+            DiceHelper.ForcedRandomValue = 15;
+            // Act
+            var result = DiceHelper.RollDice(3, 10);
+            // Reset
+            DiceHelper.ForceRollsToNotRandom = false;
+            // Assert             
+            Assert.AreEqual(15, result);
+        }
     }
 
 }
